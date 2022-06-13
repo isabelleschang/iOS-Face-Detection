@@ -129,6 +129,11 @@ extension LiveFeedViewController: AVCaptureVideoDataOutputSampleBufferDelegate {
                 }
                 if let innerLips = landmarks.innerLips {
                     self.handleLandmark(innerLips, faceBoundingBox: faceRectConverted)
+                    
+                }
+                if let leftPupil = landmarks.leftPupil {
+                    self.handleLandmark(leftPupil, faceBoundingBox: faceRectConverted)
+                    
                 }
             }
         }

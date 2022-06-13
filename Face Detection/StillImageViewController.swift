@@ -64,7 +64,7 @@ class StillImageViewController: UIViewController {
     private func performVisionRequest(image: CGImage) {
          
          let faceDetectionRequest = VNDetectFaceRectanglesRequest(completionHandler: self.handleFaceDetectionRequest)
-        
+        //let faceDetectionRequest = VNDetectFaceLandmarksRequest(completionHandler: self.handleFaceDetectionRequest)
         //can request for multiple things like contours, face landmarks, etc...
         //face landmarks in live feed
         //we need completionhandler as parameter
